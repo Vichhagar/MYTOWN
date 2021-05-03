@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+nav {
+	display: grid;
+	grid-template-areas: 'nav-links accounts';
+	width: 60%;
+	margin: auto;
+	margin-top: 3%;
+	grid-gap: 40px;
+}
+
+i{
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+i:hover{
+	transform: scale(1.3);
+}
+
+.header {
+	text-align:center;
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+h1 {
+	font-family: 'Merriweather';
+	font-size: 50px;
+}
+
+h2, h4, h5 {
+	font-weight: : 100;
+}
+ hr {
+ 	width: 70%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-bottom: 2%;
+ }
+
+ .content-container{
+ 	display: grid;
+ 	grid-template-areas: 'left-content right-content';
+ 	width: 60%;
+ 	margin: auto;
+ 	grid-gap:50px;
+ 	text-align: left;
+ }
+
+ .featured-article, .another-article {
+ 	margin-top: 2%;
+ 	margin-bottom: 2%;
+ }
+
+ .another-article h3, p {
+ 	margin-bottom: 10px;
+ }
+
+img {
+	height: 400px;
+	width: 700px;
+	border-radius: 1%;
+}
+
+.btn {
+	font-family: 'Open Sans';
+}
+
+.right-content img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+
+}
+
+.author-caption {
+	font-style: italic;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Allura';
+}
+
+.newsletter {
+	margin-top: 10%;
+	border: 1px solid black;
+	padding: 25px 10px 25px 10px;
+	text-align: center;
+	grid-area: newsletter;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li:hover{
+	font-weight: 900;
+}
+
+h5 {
+	margin-bottom: 10%; 
+}
+
+input[type="email"] {
+	padding: 10px 20px 10px 20px;
+	outline: none;
+}
+::placeholder {
+	text-align: center;
+}
+
+.sub-btn {
+	background-color: black;
+	border:none;
+	color: white;
+	padding: 15px 70px 15px 70px;
+	margin-top: 5%;	
+}
+
+.sub-btn:hover{
+	background-color: #a9a9a9;
+}
+
+
+
+input[type="text"]{
+	padding: 5px;
+	width: 80%;
+	outline: none;
+}
+
+.popular-posts{
+	margin-top: 10%;
+	text-align: center;
+	grid-area: popular-posts;
+
+}
+.popular-posts h5{
+	background: #4ECDC4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	color: white;
+
+
+	padding: 10px;
+}
+
+.popular-posts img{
+	height: 220px;
+	width: 200px;
+	border-radius: 0!important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+}
+
+.caption{
+	font-family: 'Allura';
+	font-style: italic;
+	font-size: 20px;
+}
+
+.caption:hover{
+	font-weight: 900;
+}
+
+html{
+	background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.avatar-content{
+	grid-area: avatar-content;
+}
+
+@media(max-width: 1299px){
+	nav{
+		grid-template-areas: 
+		'nav-links' 
+		'accounts';
+		text-align: center;
+	}
+
+	.content-container{
+		grid-template-areas: 
+		'left-content'
+		'right-content';
+		width: 70%;
+		margin: auto;
+	}
+
+	hr{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2%;
+	}
+
+	.right-content{
+		display: grid;
+		grid-template-areas: 'avatar-content newsletter'
+		'search topics';
+		grid-gap: 40px;
+	}
+	.newsletter{
+		margin-top: 0; 
+	}
+
+	.popular-posts{
+		display: none;
+	}
+
+	.topics{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 700px){
+	nav li{
+		display: block;
+	}
+
+	.content-container{
+		grid-template-areas: 
+		'left-content'
+		'right-content';
+		grid-gap: 40px;
+		width: 80%;
+		margin: auto;
+	}
+
+	hr{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2%;
+	}
+
+	.left-content img{
+		height: 300px;
+		width: 400px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.right-content{
+		display: grid;
+		grid-template-areas: 
+		'avatar-content'
+		'newsletter'
+		'search'
+		'topics'
+		width: 50%;
+		margin:auto;
+	}
+
+	.newsletter, .topics, .search{
+		margin-top: 3%;
+	}
+
+	.read-more-btn{
+		float: left;
+	}
+}

@@ -1,0 +1,1920 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
+}
+
+#PageOne, #PageTwo, #PageThree, #PageFour {
+    scroll-snap-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.container {
+    max-width: 110rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+#PageOne {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+head:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 17;
+
+}
+
+
+.temple {
+    position: absolute;
+    top: 0;
+    /* width: 1500px; */
+    right: 0;
+    z-index: 18;
+}
+
+.tree {
+    position: absolute;
+    top: 0;
+    /* width: 1500px; */
+    right: 0;
+    z-index: 20;
+}
+
+.person {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    z-index: 21;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 22;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.05), transparent);
+    transition: background 0.5s;
+}
+
+
+nav .container, nav .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav .aboutUs > a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.hamburger-menu {
+    width: 1.55rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar {
+    position: relative;
+    width: 1.2rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before, .bar:after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    width: 1.55rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before {
+    transform: translateY(-8px);
+}
+
+.bar:after {
+    transform: translateY(8px);
+}
+
+.title {
+    position: absolute;
+    top: 7rem;
+    left: 5rem;
+}
+
+.big-title {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 50rem;
+    z-index: 19;
+    line-height: 4rem;
+    top: 16rem;
+    width: 100%;
+    /* text-align: center; */
+    font-size: 8rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 2px 0px #fff;
+}
+
+
+.line {
+    position: absolute;
+    left: 50rem;
+    top: 9rem;
+    z-index: 19;
+    width: 620px;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 1px 1px #fff;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    position: relative;
+    /* height: 60vh; */
+    /* background-color: rgb(131, 131, 131); */
+
+}
+
+.section1 .container > * {
+    margin: 3rem;
+}
+
+.section1 .container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+} 
+
+.section1 img {
+    width: 80%;
+}
+
+.content {
+    margin-left: 20px;
+    /* transform: translateY(-50px); */
+}
+
+/* .imgContainer {
+    transform: translateY(50px);
+} */
+
+.section-title {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.border {
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 100%;
+    height: 150px;
+    width: 100%;
+    left: 0;
+    z-index: 21;
+    background: linear-gradient(to top, #fff, transparent);
+    /* Want shadow or not */
+    display: none;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.containerTwo {
+    width: 100%;
+    margin: 20px auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    width: 300%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+
+.slider .section1 {
+    flex-basis: 25%;
+    width: 33.33%;
+    flex-shrink: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTwo-title {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-size: 3rem;
+}
+
+
+/* Need to fix the code redundentcy */
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+
+}
+
+.prev > img {
+    width: 50px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+}
+
+.next > img {
+    width: 50px;
+}
+
+
+/* Adding Hover State */
+.read-more {
+    position: relative;
+    background-color: #fb8500;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 2px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.read-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #004a9e;
+
+    transition: 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.read-more::before:hover {
+    transform: scaleX(1);
+}
+/* .read-more:focus::before {
+    transform: scaleX(1);
+} */
+
+/* To-Do Section */
+.section2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cards-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.cards-container .card {
+    z-index: 0;
+    position: relative;
+    max-width: 430px;
+    height: 200px;
+    border-radius: 0px 0px 90px 90px;
+    background: #fff;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+    transform: translateY(-100px);
+}
+
+.cards-container .card:hover {
+    height: 650px;
+    border-radius: 0px 0px 0px 0px;
+    transform: translateY(0);
+}
+
+.cards-container .card .imgBox  img {
+    max-width: 100%;
+    /* border-radius: 5px; */
+    z-index: 2;
+
+}
+
+.cards-container .card .imgBox {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* top: -50px; */
+}
+
+.cards-container .card .content {
+    position: relative;
+    z-index: 1;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: left;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.cards-container .card .content .card-title {
+    transform: translateX(-10px);
+}
+
+.cards-container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    /* transition-delay: 0.3s; */
+}
+
+.to-do-read-more {
+    background-color: #0074f9;
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 2px;
+    cursor: pointer;
+    transform: translateX(20px);
+}
+
+
+/* About Us section */
+/* .section3 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: cadetblue;
+} */
+
+#map {
+    height: 100vh;
+    width: 100%;
+  }
+
+.pop-title {
+    padding: 10px 75px;
+    text-align: center;
+}
+
+.Visit {
+    background-color: #0074f9;
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    margin: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 2px;
+    cursor: pointer;
+    transform: translateX(20px);
+}
+
+.visit-Khaka {
+    padding: 10px 90px;
+}
+
+.visit-Inle {
+    padding: 10px 70px;
+}
+
+/* Slider Tab Active for Navigation Menu*/
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    padding: 20px;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+ul li.active a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.NavSlider {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    top: 0;
+    right: 7rem;
+    border-bottom: #fff solid 4px;
+    z-index: -1;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+/* Maps Tap */
+ul li:nth-child(4).active ~ .NavSlider {
+    width: 85px;
+    right: 7rem;
+    opacity: 1;
+}
+
+/* To-Do Tap */
+ul li:nth-child(3).active ~ .NavSlider {
+    width: 90px;
+    right: 13rem;
+    opacity: 1;
+}
+
+/* Famous Place Tap */
+ul li:nth-child(2).active ~ .NavSlider {
+    right: 19rem;
+    width: 160px;
+    opacity: 1;
+}
+
+/* Home Tap */
+ul li:nth-child(1).active ~ .NavSlider {
+    right: 30rem;
+    width: 75px;
+    opacity: 1;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 21vh;
+    background-color: #333;
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    top: 50%;
+    transform: translateY(70%);
+}
+
+.address-line1, .address-line2 {
+    position: absolute;
+    background-color: #fff;
+    width: 3px;
+    height: 100px;
+    left: -1rem;
+}
+
+.address1, .address2 {
+    transform: translateY(-25%);
+}
+
+.footer-title > h1 {
+    font-weight: 600;
+}
+
+.footer-title > h1 > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-title > h4 {
+    font-size: 1.2rem;
+    letter-spacing: 6.5px;
+}
+
+.footer-title {
+    transform: translateY(-10%);
+}
+
+.fotter-logos > a > img {
+    margin-left: 30px;
+}
+
+#copy-right-section {
+    position: absolute;
+    color: #fff;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+}
+
+@media (max-width: 2020px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1880px) {
+    /* 1900px */
+    /* #PageOne */
+    .temple {
+        position: absolute;
+        top: 1rem;
+        /* width: 1500px; */
+        right: 0;
+        z-index: 18;
+    }
+    
+    .tree {
+        position: absolute;
+        top: 0;
+        /* width: 1500px; */
+        right: 0;
+        z-index: 20;
+    }
+    
+    .person {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        z-index: 21;
+    }
+
+    .big-title {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 25rem;
+        z-index: 19;
+        line-height: 4rem;
+        top: 16rem;
+        width: 100%;
+        /* text-align: center; */
+        font-size: 9rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 2px 0px #fff;
+    }
+
+    .line {
+        position: absolute;
+        left: 25rem;
+        top: 9rem;
+        z-index: 19;
+        width: 620px;
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 1px 1px #fff;
+    }
+
+    /* #PageTwo */
+    /* .section1 .container {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    } 
+
+    .sectionTwo-title {
+        position: absolute;
+        top: 100px;
+        left: 40%;
+        font-size: 0rem;
+        visibility: hidden;
+    }
+
+    .section1 img {
+        width: 30%;
+        margin-left: 550px;
+    }
+    
+    .prev > img {
+        width: 40px;
+    }
+    
+    
+    .next > img {
+        width: 40px;
+    } */
+
+    /* #PageThree */
+    .section2 {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .cards-container .card {
+        z-index: 0;
+        position: relative;
+        max-width: 420px;
+        height: 200px;
+        border-radius: 0px 0px 90px 90px;
+        background: #fff;
+        margin: 140px 30px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.2s ease-in-out;
+        transform: translateY(-100px);
+    }
+
+    .cards-container .card .imgBox {
+        position: relative;
+        width: 390px;
+        height: 390px;
+        /* top: -50px; */
+    }
+
+    .cards-container .card .imgBox  img {
+        max-width: 100%;
+        /* border-radius: 5px; */
+        z-index: 2;
+    }
+
+    .to-do-read-more {
+        background-color: #0074f9;
+        border: none;
+        color: white;
+        padding: 10px 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 25px 2px;
+        cursor: pointer;
+        transform: translateX(-20px);
+    }
+
+    /* Footer */
+    footer {
+        position: relative;
+        width: 100%;
+        height: 21vh;
+        background-color: #333;
+    
+    }
+    
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        top: 50%;
+        transform: translateY(70%);
+    }
+    
+    .address-line1, .address-line2 {
+        position: absolute;
+        background-color: #fff;
+        width: 3px;
+        height: 100px;
+        left: -1rem;
+    }
+    
+    .address1, .address2 {
+        transform: translateY(-25%);
+    }
+    
+    .footer-title > h1 {
+        font-weight: 600;
+    }
+    
+    .footer-title > h1 > a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .footer-title > h4 {
+        font-size: 1.2rem;
+        letter-spacing: 6.5px;
+    }
+    
+    .footer-title {
+        transform: translateY(-10%);
+    }
+    
+    .fotter-logos > a > img {
+        margin-left: 30px;
+    }
+
+    ul li:nth-child(4).active ~ .NavSlider {
+        width: 85px;
+        right: 5.5rem;
+        opacity: 1;
+    }
+
+    /* To-Do Tap */
+    ul li:nth-child(3).active ~ .NavSlider {
+        width: 90px;
+        right: 11rem;
+        opacity: 1;
+    }
+
+    /* Famous Place Tap */
+    ul li:nth-child(2).active ~ .NavSlider {
+        right: 17.3rem;
+        width: 160px;
+        opacity: 1;
+    }
+
+    /* Home Tap */
+    ul li:nth-child(1).active ~ .NavSlider {
+        right: 28.5rem;
+        width: 75px;
+        opacity: 1;
+    }
+
+}
+
+@media (max-width: 1574px) {
+
+    /* Map Tap */
+    ul li:nth-child(4).active ~ .NavSlider {
+        width: 85px;
+        right: 2rem;
+        opacity: 1;
+    }
+
+    /* To-Do Tap */
+    ul li:nth-child(3).active ~ .NavSlider {
+        width: 90px;
+        right: 7rem;
+        opacity: 1;
+    }
+
+    /* Famous Place Tap */
+    ul li:nth-child(2).active ~ .NavSlider {
+        right: 13.3rem;
+        width: 160px;
+        opacity: 1;
+    }
+
+    /* Home Tap */
+    ul li:nth-child(1).active ~ .NavSlider {
+        right: 24.5rem;
+        width: 75px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* 1200px */
+    /* #PageOne */
+    .temple {
+        position: absolute;
+        top: -3rem;
+        /* width: 1500px; */
+        left: -10rem;
+        z-index: 18;
+    }
+
+    .tree {
+        position: absolute;
+        top: -6rem;
+        /* width: 1500px; */
+        right: 0;
+        z-index: 20;
+    }
+    
+    .person {
+        position: absolute;
+        bottom: -1rem;
+        width: 100%;
+        right: 0;
+        z-index: 21;
+    }
+
+    .big-title {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 25rem;
+        z-index: 19;
+        line-height: 4rem;
+        top: 16rem;
+        width: 100%;
+        /* text-align: center; */
+        font-size: 7rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 2px 0px #fff;
+    }
+
+    .line {
+        position: absolute;
+        left: 25rem;
+        top: 10rem;
+        z-index: 19;
+        width: 620px;
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 1px 1px #fff;
+    }
+
+    /* #PageTwo */
+    .section1 .container {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    } 
+
+    .sectionTwo-title {
+        position: absolute;
+        top: 100px;
+        left: 40%;
+        font-size: 0rem;
+        visibility: hidden;
+    }
+
+    .section1 img {
+        width: 100%;
+        margin-left: 30px;
+    }
+    
+    .prev > img {
+        width: 40px;
+    }
+    
+    
+    .next > img {
+        width: 40px;
+    }
+
+    /* #PageThree */
+    .section2 {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .cards-container .card {
+        z-index: 0;
+        position: relative;
+        max-width: 340px;
+        height: 200px;
+        border-radius: 0px 0px 90px 90px;
+        background: #fff;
+        margin: 140px 30px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.2s ease-in-out;
+        transform: translateY(-100px);
+    }
+
+    .cards-container .card:hover {
+        height: 550px;
+        border-radius: 0px 0px 0px 0px;
+        transform: translateY(0);
+    }
+
+    .cards-container .card .imgBox {
+        position: relative;
+        width: 310px;
+        height: 310px;
+        /* top: -50px; */
+    }
+
+    .cards-container .card .imgBox  img {
+        max-width: 100%;
+        /* border-radius: 5px; */
+        z-index: 2;
+    }
+
+    .to-do-read-more {
+        background-color: #0074f9;
+        border: none;
+        color: white;
+        padding: 10px 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 25px 2px;
+        cursor: pointer;
+        transform: translateX(-20px);
+    }
+
+    /* Footer */
+    .footer-title > h1 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .footer-title > h4 {
+        font-size: 1rem;
+        letter-spacing: 3.8px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+    }
+
+    .address1, .address2, .address-line1, .address-line2 {
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background-color: #333;
+    }
+
+    .footer-content {
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        max-width: 80%;
+        top: 0;
+        transform: translateY(40px);
+        transform: translateX(370px);
+        margin-left: 120px;
+    }
+
+    .fotter-logos > a > img {
+        /* margin-left: 20px; */
+        width: 35px;
+    }
+
+    #copy-right-section {
+        position: absolute;
+        color: #fff;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+    }
+
+    /* Maps Tap */
+    ul li:nth-child(4).active ~ .NavSlider {
+        width: 85px;
+        right: 1.5rem;
+        opacity: 1;
+    }
+
+    /* To-Do Tap */
+    ul li:nth-child(3).active ~ .NavSlider {
+        width: 90px;
+        right: 7.5rem;
+        opacity: 1;
+    }
+
+    /* Famous Place Tap */
+    ul li:nth-child(2).active ~ .NavSlider {
+        right: 13.5rem;
+        width: 160px;
+        opacity: 1;
+    }
+
+    /* Home Tap */
+    ul li:nth-child(1).active ~ .NavSlider {
+        right: 24.5rem;
+        width: 75px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .temple {
+        position: absolute;
+        top: -2rem;
+        width: 1500px;
+        right: 0;
+        z-index: 18;
+    }
+    
+    .tree {
+        position: absolute;
+        top: 0;
+        width: 1500px;
+        right: 0;
+        z-index: 20;
+    }
+    
+    /* .person {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        z-index: 21;
+    } */
+
+    .big-title {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 25rem;
+        z-index: 19;
+        line-height: 4rem;
+        top: 16rem;
+        width: 100%;
+        /* text-align: center; */
+        font-size: 6.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 2px 0px #fff;
+    }
+
+    .line {
+        position: absolute;
+        left: 25rem;
+        top: 10rem;
+        z-index: 19;
+        width: 620px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 1px 1px #fff;
+    }
+
+    /* #PageThree */
+    .section2 {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .cards-container .card {
+        z-index: 0;
+        position: relative;
+        max-width: 270px;
+        height: 100px;
+        border-radius: 0px 0px 90px 90px;
+        background: #fff;
+        margin: 140px 30px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.2s ease-in-out;
+        transform: translateY(-100px);
+    }
+
+    .cards-container .card:hover {
+        height: 650px;
+        border-radius: 0px 0px 0px 0px;
+        transform: translateY(0);
+    }
+
+    .cards-container .card .imgBox {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        /* top: -50px; */
+    }
+
+    .cards-container .card .imgBox  img {
+        max-width: 100%;
+        /* border-radius: 5px; */
+        z-index: 2;
+    }
+
+    .to-do-read-more {
+        background-color: #0074f9;
+        border: none;
+        color: white;
+        padding: 10px 85px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 25px 2px;
+        cursor: pointer;
+        transform: translateX(-20px);
+    }
+    
+    footer {
+        position: relative;
+        width: 100%;
+        height: 32vh;
+        background-color: #333;
+    }
+
+    .footer-content {
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        max-width: 80%;
+        top: 0;
+        transform: translateY(40px);
+        transform: translateX(370px);
+        margin-left:28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* 1024px */
+        /* #PageOne */
+        .tree {
+            position: absolute;
+            top: -6rem;
+            /* width: 1500px; */
+            right: 0;
+            z-index: 20;
+        }
+
+        .temple {
+            position: absolute;
+            top: -1rem;
+            /* width: 1500px; */
+            left: -10rem;
+            z-index: 18;
+        }
+
+        .person {
+            position: absolute;
+            bottom: -1rem;
+            width: 1500px;
+            right: 0;
+            z-index: 21;
+        }    
+    
+        .big-title {
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            left: 13rem;
+            z-index: 19;
+            line-height: 4rem;
+            top: 10rem;
+            width: 100%;
+            /* text-align: center; */
+            font-size: 6rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0px 2px 0px #fff;
+        }
+    
+        .line {
+            position: absolute;
+            left: 13rem;
+            top: 4.5rem;
+            z-index: 19;
+            width: 620px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0px 1px 1px #fff;
+        }
+    
+        /* #PageTwo */
+        .section1 .container {
+            margin-top: 50px;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        } 
+    
+        .sectionTwo-title {
+            position: absolute;
+            top: 100px;
+            left: 40%;
+            font-size: 0rem;
+            visibility: hidden;
+        }
+    
+        .section1 img {
+            width: 100%;
+            /* margin-left: 230px; */
+        }
+        
+        .prev > img {
+            width: 40px;
+        }
+        
+        
+        .next > img {
+            width: 40px;
+        }
+    
+        /* #PageThree */
+        .section2 {
+            position: relative;
+            width: 100%;
+            min-height: 150vh;
+            display: flex;
+            align-items: center;
+        }
+    
+        .cards-container .card {
+            z-index: 0;
+            position: relative;
+            max-width: 430px;
+            height: 200px;
+            border-radius: 0px 0px 90px 90px;
+            background: #fff;
+            margin: 140px 30px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+            transition: 0.2s ease-in-out;
+            transform: translateY(-100px);
+        }
+    
+        .cards-container .card .imgBox {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            /* top: -50px; */
+        }
+    
+        .cards-container .card .imgBox  img {
+            max-width: 100%;
+            /* border-radius: 5px; */
+            z-index: 2;
+        }
+    
+        /* Footer */
+        .footer-title > h1 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+    
+        .footer-title > h4 {
+            font-size: 1rem;
+            letter-spacing: 3.8px;
+            margin-bottom: 10px;
+            margin-left: 35px;
+        }
+    
+        .address1, .address2, .address-line1, .address-line2 {
+            visibility: hidden;
+            font-size: 0;
+        }
+
+    
+        .footer-content {
+            display: block;
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            max-width: 80%;
+            top: 0;
+            transform: translateY(40px);
+            transform: translateX(370px);
+            margin-left: 15px;
+        }
+    
+        .fotter-logos > a > img {
+            /* margin-left: 20px; */
+            width: 25px;
+        }
+    
+        /* Maps Tap */
+        ul li:nth-child(4).active ~ .NavSlider {
+            width: 85px;
+            right: 1.5rem;
+            opacity: 1;
+        }
+    
+        /* To-Do Tap */
+        ul li:nth-child(3).active ~ .NavSlider {
+            width: 90px;
+            right: 7.5rem;
+            opacity: 1;
+        }
+    
+        /* Famous Place Tap */
+        ul li:nth-child(2).active ~ .NavSlider {
+            right: 13.5rem;
+            width: 160px;
+            opacity: 1;
+        }
+    
+        /* Home Tap */
+        ul li:nth-child(1).active ~ .NavSlider {
+            right: 24.5rem;
+            width: 75px;
+            opacity: 1;
+        }
+    
+}
+
+@media (max-width: 950px) {
+    .tree {
+        position: absolute;
+        top: -6rem;
+        /* width: 1500px; */
+        right: 0;
+        z-index: 20;
+    }
+
+    .temple {
+        position: absolute;
+        top: -1rem;
+        /* width: 1500px; */
+        left: -10rem;
+        z-index: 18;
+    }
+
+    .person {
+        position: absolute;
+        bottom: -1rem;
+        width: 1500px;
+        right: 0;
+        z-index: 21;
+    }
+
+    .big-title {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 15rem;
+        z-index: 19;
+        line-height: 4rem;
+        top: 10rem;
+        width: 100%;
+        /* text-align: center; */
+        font-size: 6.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 2px 0px #fff;
+    }
+
+    .line {
+        position: absolute;
+        left: 15rem;
+        top: 6rem;
+        z-index: 19;
+        width: 620px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 1px 1px #fff;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 36vh;
+        background-color: #333;
+    }
+
+    .footer-content {
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        max-width: 80%;
+        top: 0;
+        /* transform: translateY(40px); */
+        /* transform: translateX(370px); */
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    
+    /* #PageOne */
+    .temple {
+        position: absolute;
+        top: 3rem;
+        width: 1800px;
+        left: -20rem;
+        z-index: 18;
+    }
+
+    .tree {
+        position: absolute;
+        top: 0;
+        width: 1800px;
+        right: 0;
+        z-index: 20;
+    }
+    
+    .person {
+        position: absolute;
+        bottom: 00rem;
+        width: 1500px;
+        right: 0;
+        z-index: 21;
+    }
+
+    .big-title {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 1rem;
+        z-index: 19;
+        line-height: 4rem;
+        top: 16rem;
+        width: 100%;
+        /* text-align: center; */
+        font-size: 6rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 2px 0px #fff;
+    }
+
+    .line {
+        position: absolute;
+        left: 1rem;
+        top: 10rem;
+        z-index: 19;
+        width: 620px;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0px 1px 1px #fff;
+    }
+
+    /* #PageTwo */
+    .section1 .container {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200vh;
+    } 
+
+    .sectionTwo-title {
+        position: absolute;
+        top: 100px;
+        left: 40%;
+        font-size: 0rem;
+        visibility: hidden;
+    }
+
+    .section1 img {
+        width: 80%;
+        margin-left: 80px;
+    }
+    
+    .prev > img {
+        width: 40px;
+    }
+    
+    
+    .next > img {
+        width: 40px;
+    }
+
+    /* #PageThree */
+    .section2 {
+        position: relative;
+        width: 100%;
+        min-height: 150vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .cards-container .card {
+        z-index: 0;
+        position: relative;
+        max-width: 430px;
+        height: 200px;
+        border-radius: 0px 0px 90px 90px;
+        background: #fff;
+        margin: 140px 30px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.2s ease-in-out;
+        transform: translateY(-100px);
+    }
+
+    .cards-container .card .imgBox {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        /* top: -50px; */
+    }
+
+    .cards-container .card .imgBox  img {
+        max-width: 100%;
+        /* border-radius: 5px; */
+        z-index: 2;
+    }
+
+    /* Footer */
+    .footer-title > h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .footer-title > h4 {
+        font-size: 1.5rem;
+        letter-spacing: 3.8px;
+        /* margin-bottom: 10px; */
+        margin-left: 35px;
+    }
+
+    .address1, .address2, .address-line1, .address-line2 {
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 22.5vh;
+        background-color: #333;
+    }
+
+    .footer-content {
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        max-width: 80%;
+        top: 0;
+        transform: translateX(265px);
+    }
+
+    .fotter-logos > a > img {
+        width: 30px;
+    }
+
+    #copy-right-section {
+        bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Maps Tap */
+    ul li:nth-child(4).active ~ .NavSlider {
+        width: 85px;
+        right: 1.5rem;
+        opacity: 1;
+    }
+
+    /* To-Do Tap */
+    ul li:nth-child(3).active ~ .NavSlider {
+        width: 90px;
+        right: 7.5rem;
+        opacity: 1;
+    }
+
+    /* Famous Place Tap */
+    ul li:nth-child(2).active ~ .NavSlider {
+        right: 13.5rem;
+        width: 160px;
+        opacity: 1;
+    }
+
+    /* Home Tap */
+    ul li:nth-child(1).active ~ .NavSlider {
+        right: 24.5rem;
+        width: 75px;
+        opacity: 1;
+    }
+}
+
+/* Hidding Nav */
+@media all and (max-width: 734px) {
+    nav > .container > ul > li{
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* HAVE TO ADD RESPONDSIVE FOR MOBILE */
+@media (min-width: 360px) and (max-width: 375px) {
+    /* Mobile */
+    /* 360px */
+        /* #PageOne */
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .temple {
+            position: absolute;
+            top: 0;
+            width: 1500px;
+            right: 0;
+            z-index: 18;
+        }
+        
+        .tree {
+            position: absolute;
+            top: 0;
+            width: 1500px;
+            right: 0;
+            z-index: 20;
+        }
+        
+        .person {
+            position: absolute;
+            bottom: 13rem;
+            width: 1500px;
+            right: 0;
+            z-index: 21;
+        }
+    
+        .big-title {
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            left: 1rem;
+            z-index: 19;
+            line-height: 4rem;
+            top: 16rem;
+            width: 100%;
+            /* text-align: center; */
+            font-size: 3rem;
+            font-weight: 600;
+            color: #111;
+            text-shadow: none;
+        }
+    
+        .line {
+            position: absolute;
+            left: 1.5rem;
+            top: 15rem;
+            z-index: 19;
+            width: 620px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: none;
+        }
+    
+        /* #PageTwo */
+        .section1 .container {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        } 
+    
+        .sectionTwo-title {
+            position: absolute;
+            top: 100px;
+            left: 40%;
+            font-size: 0rem;
+            visibility: hidden;
+        }
+    
+        .imgContainer > img {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .prev > img {
+            width: 40px;
+        }
+        
+        
+        .next > img {
+            width: 40px;
+        }
+    
+        /* #PageThree */
+        .section2 {
+            position: relative;
+            width: 100%;
+            min-height: 150vh;
+            display: flex;
+            align-items: center;
+        }
+    
+        .cards-container .card {
+            z-index: 0;
+            position: relative;
+            max-width: 430px;
+            height: 200px;
+            border-radius: 0px 0px 90px 90px;
+            background: #fff;
+            margin: 140px 30px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+            transition: 0.2s ease-in-out;
+            transform: translateY(-100px);
+        }
+    
+        .cards-container .card .imgBox {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            /* top: -50px; */
+        }
+    
+        .cards-container .card .imgBox  img {
+            max-width: 100%;
+            /* border-radius: 5px; */
+            z-index: 2;
+        }
+    
+        /* Footer */
+        .footer-title > h1 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+    
+        .footer-title > h4 {
+            font-size: 1rem;
+            letter-spacing: 3.8px;
+            margin-bottom: 10px;
+            margin-left: 35px;
+        }
+    
+        .address1, .address2, .address-line1, .address-line2 {
+            visibility: hidden;
+            font-size: 0;
+        }
+    
+        .footer-content {
+            display: block;
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            max-width: 80%;
+            top: 0;
+            transform: translateY(40px);
+            transform: translateX(220px);
+        }
+    
+        .fotter-logos > a > img {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    
+        /* Maps Tap */
+        ul li:nth-child(4).active ~ .NavSlider {
+            width: 85px;
+            right: 1.5rem;
+            opacity: 1;
+        }
+    
+        /* To-Do Tap */
+        ul li:nth-child(3).active ~ .NavSlider {
+            width: 90px;
+            right: 7.5rem;
+            opacity: 1;
+        }
+    
+        /* Famous Place Tap */
+        ul li:nth-child(2).active ~ .NavSlider {
+            right: 13.5rem;
+            width: 160px;
+            opacity: 1;
+        }
+    
+        /* Home Tap */
+        ul li:nth-child(1).active ~ .NavSlider {
+            right: 24.5rem;
+            width: 75px;
+            opacity: 1;
+        }
+    }
