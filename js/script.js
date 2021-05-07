@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
     // opacity.forEach(element => {
     //     element.style.opacity = scroll / (section1Y.top + section1_height)
     // })
-    shadow.style.height =  `${scroll * 0.5 + 150}px`;
+    // shadow.style.height =  `${scroll * 0.5 + 150}px`;
 
     // content.style.transform = `translateY(${scroll / (section1_height + section1Y.top) * -30 + 30}px)`;
     // imgContainer.style.transform = `translateY(${scroll / (section1_height + section1Y.top) * -50 + 50}px)`;
@@ -68,6 +68,15 @@ window.addEventListener('scroll', () => {
     })
     
 })
+
+
+// Hamburger
+const hamburger = document.querySelector('.hamburger-menu');
+const navUL = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click', () => {
+    navUL.classList.toggle('show');
+});
 
 //TYPE WRITER EFFECT
 

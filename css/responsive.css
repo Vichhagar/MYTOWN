@@ -1,0 +1,135 @@
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    /* PageOne */
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+
+    nav .container ul.show {
+        display: block;
+    }
+
+    .big-title {
+        left: 10%;
+        font-size: 7.5rem;
+    }
+    
+    
+    .line {
+        top: 40%;
+        left: 10%;
+    }
+
+    .person {
+        left: -30rem;
+    }
+
+    .temple {
+        left: -30rem;
+    }
+    
+    .tree {
+        left: -30rem;
+    }
+
+    /* PageTwo */
+    .section1 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .sectionTwo-title {
+        display: none;
+    }
+
+    .section1 img {
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* PageThree */
+
+    .cards-container .card {
+        height: 200px;
+        margin:200px 30px;
+    }
+
+    /* Footer */
+
+    .footer-title > h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .footer-title > h4 {
+        font-size: 1.5rem;
+        letter-spacing: 3.8px;
+
+        margin-left: 35px;
+    }
+
+    .address1, .address2, .address-line1, .address-line2 {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 22.5vh;
+    }
+
+    .footer-content {
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        max-width: 80%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fotter-logos > a > img {
+        margin-top: 20px;
+        width: 40px;
+    }
+
+    #copy-right-section {
+        bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .show {
+        text-align: center;
+        position: absolute;
+        top: 4rem;
+        right: -30rem;
+        /* left: 0; */
+        transform: translateX(-50%);
+        line-height: 5rem;
+        background-color: #444;
+        padding: 50px 350px;
+    }
+  }
+  @media only screen and (max-width:360px) {
+    /* For mobile phones: */
+    .show {
+        line-height: 3rem;
+    }
+
+    #PageOne {
+        width: 110%;
+        height: 110vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+  }
