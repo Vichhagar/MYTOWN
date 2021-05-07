@@ -52,7 +52,7 @@ head:after {
 .sky {
     position: absolute;
     bottom: 0;
-    width: 3000px;
+    width: 3500px;
     /* right: 0; */
     z-index: 17;
 }
