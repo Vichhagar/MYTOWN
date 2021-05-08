@@ -1,3 +1,8 @@
+/* 
+Check By:
+https://www.responsivedesignchecker.com
+*/
+
 /* 1440px * 900px (19" Desktop) */
 @media only screen and (max-width:1440px) {
     .cards-container .card {
@@ -289,7 +294,6 @@
         padding: 50px 300px;
     }
 
-    /* Page Two */
     .cards-container .card {
         max-width: 430px;
     }
@@ -308,17 +312,198 @@
     }
 }
 
-
-@media only screen and (max-width:360px) {
+/* Mobile Respondsive */
+/* 414px * 736px (Apple iPhone 6s Plus / 7 Plus)*/
+@media only screen and (max-width:414px) {
     /* For mobile phones: */
     .show {
         line-height: 3rem;
+        padding: 50px 250px;
     }
 
-    #PageOne {
-        width: 110%;
-        height: 110vh;
+    #PageOne, #map, footer {
+        width: 102%;
         position: relative;
         overflow: hidden;
+    }
+
+    /* Home Page */
+    #PageOne {
+        height: 102vh;
+    }
+
+    .big-title {
+        font-size: 4rem;
+    }
+    
+    .line {
+        top: 40%;
+        font-size: 2rem;
+    }
+
+    /* Page Two */
+    .section1 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .text {
+        display: none;
+    }
+
+    .section1 img {
+        width: 150%;
+        transform: translateX(-48%);
+        margin-top: 50px;
+    }
+
+    .container > .read-more {
+        margin-top: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container > .section-title {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Page Three */
+    .cards-container .card {
+        margin: 20px 30px;
+        padding: 20px 15px;
+        height: 400px;
+        max-width: 260px;
+        border-radius: 0px 0px 0px 0px;
+        transform: translateY(0);
+    }
+    
+    .cards-container .card .imgBox {
+        width: 230px;
+        height: 230px;
+    }
+
+    .to-do-read-more {
+        transform: translateX(-40px);
+    }
+
+    .cards-container .card:hover {
+        height: 400px;
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    .cards-container .card .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+    .cards-container .card:hover .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+    /* Changing font for History and Culture */
+    .hac {
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .footer-title > h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .footer-title > h4 {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 22.5vh;
+    }
+
+    .fotter-logos > a > img {
+        margin-top: 20px;
+        width: 25px;
+    }
+}
+
+/* 411px * 731px (Google Pixel, Nexus 5, Nexus 6) */
+@media only screen and (max-width:411px) {
+    footer {
+        width: 102%;
+    }
+
+    .show {
+        line-height: 3rem;
+        padding: 50px 265px;
+    }
+
+    .fotter-logos > a > img {
+        margin-top: 20px;
+        width: 25px;
+    }
+}
+
+/* 384px * 640px (Nexus 4) */
+@media only screen and (max-width:384px) {
+    .line {
+        top: 39%;
+        left: 5%;
+    }
+
+    .big-title {
+        left: 5%;
+    }
+
+    .show {
+        padding: 50px 250px;
+    }
+
+    .fotter-logos > a > img {
+        margin-top: 10px;
+        width: 25px;
+    }
+}
+
+/* 360px * 640px (Samsung Galaxy S5/S6/S7, Sony Xperia Z2/Z3 ) */
+@media only screen and (max-width:360px) {
+    .line, .big-title {
+        left: 2.5%;
+    }
+
+    .show {
+        padding: 50px 245px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .big-title {
+        font-size: 3.5rem;
+    }
+
+    .show {
+        padding: 50px 230px;
+    }
+
+    .footer-title > h1 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .footer-title > h4 {
+        font-size: 0.5rem;
+    }
+
+    .fotter-logos > a > img {
+        margin-top: 10px;
+        width: 14px;
     }
 }
