@@ -322,7 +322,7 @@ https://www.responsivedesignchecker.com
     }
 
     #PageOne, #map, footer {
-        width: 102%;
+        width: 100%;
         position: relative;
         overflow: hidden;
     }
@@ -438,7 +438,7 @@ https://www.responsivedesignchecker.com
 /* 411px * 731px (Google Pixel, Nexus 5, Nexus 6) */
 @media only screen and (max-width:411px) {
     footer {
-        width: 102%;
+        width: 100%;
     }
 
     .show {
@@ -495,7 +495,7 @@ https://www.responsivedesignchecker.com
     }
 
     .footer-content {
-        transform: translateX(-55%);
+        transform: translateX(-50%);
     }
 
     .footer-title > h1 {
@@ -510,5 +510,9 @@ https://www.responsivedesignchecker.com
     .fotter-logos > a > img {
         margin-top: 10px;
         width: 14px;
+    }
+
+    #PageOne, #map, footer {
+        width: 100%;
     }
 }
