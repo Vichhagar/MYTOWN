@@ -484,6 +484,7 @@ https://www.responsivedesignchecker.com
     }
 }
 
+/* 320px * 480px/568px (Apple iPhone 3/4/4s, Apple iPhone 5/5s ) */
 @media only screen and (max-width:320px) {
     .big-title {
         font-size: 3.5rem;
