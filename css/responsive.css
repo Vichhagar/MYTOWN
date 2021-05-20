@@ -515,4 +515,8 @@ https://www.responsivedesignchecker.com
     #PageOne, #map, footer {
         width: 100%;
     }
+
+    .tree {
+        bottom: -17.5rem;
+    }
 }
